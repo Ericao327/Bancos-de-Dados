@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro de Clientes</title>
+        <script src="script.js" defer></script>
+    </head>
+</body>
+    <h1>Sistema de Clientes</h1>
+
+    <h2>Cadastro</h2>
+    <form id="formCadastro">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nomeCadastro" name="nome" required><br><br>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpFCadastro" name="cpf" required><br><br>  
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="emailCadastro" name="email" required><br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefoneCadastro" name="telefone" required><br><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senhaCadastro" name="senha" required><br><br> 
+
+        <button type="button" onclick="cadastrarCliente()"></button>
+    </form>
+
+    <h2>Login</h2>
+    <form id="formLogin">
+        <label for="cpfLogin">CPF:</label>
+        <input type="cpf" id="cpfLogin" name="cpf" required><br><br>
+
+        <label for="senhaLogin">Senha:</label>
+        <input type="password" id="senhaLogin" name="senha" required><br><br>
+
+        <button type="button" onclick="loginCliente()"></button>
+    </form>
+
+    <h2>Gestao de conta</h2>
+    <form id="formEditar" style="display:nome;">
+        <label for="nomeEdicao">Nome:</label>
+        <input type="text" id="nomeEdicao" name="nome" required><br><br>
+
+        <label for="emailEdicao">E-mail:</label>
+        <input type="email" id="emailEdicao" name="email" required><br><br>
+
+        <label for="telefoneEdicao">Telefone:</label>
+        <input type="tel" id="telefoneEdicao" name="telefone" required><br><br>
+
+        <label for="senhaEdicao">Senha:</label>
+        <input type="password" id="senhaEdicao" name="senha" required><br><br>
+
+        <button type="button" onclick="editarCliente()"></button>
+        <button type="button" onclick="excluirCliente()"></button> 
+    </form>
+</body>
+</html>
